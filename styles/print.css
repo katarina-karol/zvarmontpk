@@ -1,0 +1,39 @@
+div#top, div#left, div#right, h1, .nodisplay, .none, .clear, .path_top, .path_content, .path_bottom, div#bottom
+{
+    display:none;
+}
+
+H2
+{
+    font-size:2em;
+    font-weight:bold;
+    color:#000000;
+    float: none;
+}
+
+H3 H4 H5
+{
+    font-size:1.5em;
+    font-weight:bold;
+    color:#000000;
+    float: none;
+}
+
+div#content_body
+{
+    font-size:10pt;
+    font-family:Arial,Times, serif;
+    color : #000000;
+    background : #ffffff;
+    width: auto;
+    margin: 0 5%;
+    padding: 0;
+    border: 0;
+    float: none;
+}
+
+a
+{
+    text-decoration : underline;
+    color : #000000;
+}

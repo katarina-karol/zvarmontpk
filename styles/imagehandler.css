@@ -1,0 +1,157 @@
+#thumbBox{ /*Outermost DIV for thumbnail viewer*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    padding: 10px;
+    padding-bottom: 0;
+    background: #313131;
+    visibility: hidden;
+    z-index: 10;
+    cursor: hand;
+    cursor: pointer;
+    z-index:100;
+}
+
+#thumbBox .footerbar{ /*Footer DIV of thumbbox that contains "close" link */
+    font: bold 16px Tahoma;
+    letter-spacing: 5px;
+    line-height: 1.1em;
+    color: white;
+    padding: 5px 0;
+    text-align: right;
+}
+
+
+#thumbBox #thumbImage{ /*DIV within thumbbox that holds the enlarged image */
+    background-color: white;
+}
+
+#thumbLoading{ /*DIV for showing "loading" status while thumbbox is being generated*/
+    position: absolute;
+    visibility: hidden;
+    border: 1px solid black;
+    background-color: #EFEFEF;
+    padding: 5px;
+    z-index: 5;
+}
+/***********************/
+#lightbox{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    line-height: 0;
+}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    min-height:180px;
+    height: 100%;
+    margin: 0 auto;
+    /*padding:0px 0px 50px 0px;*/
+}
+
+#imageContainer{
+    padding: 10px;
+}
+
+#loading{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+#hoverNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+    width: 49%;
+    height: 100%;
+    background: transparent url(../images/blank.gif) no-repeat; /* Trick IE into showing hover */
+    display: block;
+}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+    font: 10px Verdana, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 1.4em;
+    overflow: auto;
+    width: 100%
+}
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}
+#imageData #bottomNavClose{ display:block; width: 66px; height:22px; float: right;  padding-bottom: 0.0em;	background: url(../images/closelabel.gif) top right no-repeat;}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+
+#infopopup_box{
+    position: absolute;
+    left: -300px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: lightyellow;
+    visibility: hidden;
+    z-index: 100;
+    /*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+#infopopup_pointer{
+    position:absolute;
+    left: -300px;
+    z-index: 101;
+    visibility: hidden;
+}
+
+.infopopup_highlight{
+    background-color: #FFF36F;
+    border: 1px dotted green;
+}
+
+.infopopups
+{
+    position: absolute;
+    left: -300px;
+    width: 150px;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: lightyellow;
+    visibility: hidden;
+    z-index: 100;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
