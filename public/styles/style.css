@@ -24,7 +24,7 @@ div#top
     display: block;
     position: relative;
     height: 247px;
-    background: url(../images/top.jpg) top left no-repeat;
+    background: url(public/images/top.jpg) top left no-repeat;
 }
 
 div#left
@@ -1008,4 +1008,3 @@ TEXTAREA
     text-align:left;
     padding:5px 0px 5px 0px;
 }
-
